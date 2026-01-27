@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 const AboutMe = () => {
-  const initialDelay = 800;
+  const initialDelay = 1500;
   const prefix = "I am ";
   const phrases = [
     "a Software Engineer",
@@ -35,7 +35,7 @@ const AboutMe = () => {
     const fullText = targets[phraseIndex];
     const isFinal = phraseIndex === targets.length - 1;
     const typingSpeed = isDeleting ? 30 : 35;
-    const pause = isFinal ? 900 : 1000;
+    const pause = isFinal ? 1500 : 1700;
 
     const timeout = setTimeout(
       () => {

@@ -8,8 +8,8 @@ export default {
     extend: {
       colors: {
         gruv: {
-          bg: "#1c2121",
-          "bg-tinted": "#2a2a2b",
+          bg: "#1e2021",
+          "bg-tinted": "#2a2929",
           "highlight-red-orange": "#fa4835",
           "highlight-yellow": "#fe8118",
           "highlight-green": "#8dbc7a",

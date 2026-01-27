@@ -3,8 +3,8 @@
 :root {
   --background: var(--gruv-bg);
   --foreground: #ededed;
-  --gruv-bg: #1c2121;
-  --gruv-bg-tinted: #2a2a2b;
+  --gruv-bg: #1e2021;
+  --gruv-bg-tinted: #2a2929;
   --gruv-highlight-red-orange: #fa4835;
   --gruv-highlight-yellow: #fe8118;
   --gruv-highlight-green: #8dbc7a;
@@ -26,8 +26,8 @@
   :root {
     --background: var(--gruv-bg);
     --foreground: #ededed;
-    --gruv-bg: #1c2121;
-    --gruv-bg-tinted: #2a2a2b;
+    --gruv-bg: #1e2021;
+    --gruv-bg-tinted: #2a2929;
     --gruv-highlight-red-orange: #fa4835;
     --gruv-highlight-yellow: #fe8118;
     --gruv-highlight-green: #8dbc7a;

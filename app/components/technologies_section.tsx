@@ -26,8 +26,8 @@ const TechnologySection = () => {
       </div>
 
       <div className="relative w-full overflow-hidden">
-        <div className="pointer-events-none absolute inset-y-0 left-0 w-12 bg-gradient-to-r from-gruv-bg to-transparent"></div>
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-12 bg-gradient-to-l from-gruv-bg to-transparent"></div>
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-12 bg-linear-to-r from-gruv-bg to-transparent"></div>
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-12 bg-linear-to-l from-gruv-bg to-transparent"></div>
 
         <div className="border-y border-white/10 py-4 mask-[linear-gradient(to_right,transparent_0%,black_12%,black_88%,transparent_100%)] [mask-size:100%_100%] [mask-repeat:no-repeat]">
           <div

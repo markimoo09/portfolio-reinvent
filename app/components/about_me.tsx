@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import AnimatedIntro from "./animated_intro";
 import SocialButtons from "./social_buttons";
+import TechnologySection from "./technologies_section";
 
 const AboutMe = () => {
   return (
@@ -19,6 +20,10 @@ const AboutMe = () => {
               </h1>
 
               <AnimatedIntro />
+
+              <div className="flex flex-row gap-3 mt-8">
+                <SocialButtons />
+              </div>
             </div>
 
             <div className="flex flex-1 justify-center lg:justify-end">
@@ -34,9 +39,7 @@ const AboutMe = () => {
             </div>
           </div>
 
-          <div className="flex flex-row gap-3">
-            <SocialButtons />
-          </div>
+          <TechnologySection />
         </div>
       </div>
     </>

@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import AnimatedIntro from "./animated_intro";
+import ViewResume from "./view_resume_btn";
 
 const AboutMe = () => {
   return (
@@ -33,7 +34,9 @@ const AboutMe = () => {
             </div>
           </div>
 
-          <div></div>
+          <div className="flex flex-row gap-3">
+            <ViewResume />
+          </div>
         </div>
       </div>
     </>

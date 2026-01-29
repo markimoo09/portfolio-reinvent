@@ -132,129 +132,134 @@ const CodeBracket = ({ side }: { side: "left" | "right" }) => {
 
 const ExperienceSection = () => {
   return (
-    <div className="h-screen w-full grid md:grid-cols-5 grid-cols-1 gap-7 py-6">
-      {/* Main featured card - Sageware */}
-      <div className="relative outline-1 outline-gruv-highlight-green/40 bg-gruv-bg-tinted row-span-2 col-span-3 rounded-xl p-8 hover:pl-10 transition-all duration-200 overflow-hidden group">
-        {/* Desk setup photo as full background */}
-        <div className="absolute inset-0">
-          <Image
-            src="/images/desk.jpg"
-            alt=""
-            fill
-            className="object-cover opacity-35"
-            aria-hidden="true"
-          />
-          {/* Dark gradient overlay - fades from top to bottom for text at bottom */}
-          <div className="absolute inset-0 bg-linear-to-b from-transparent via-gruv-bg-tinted/60 to-gruv-bg-tinted" />
+    <div className="flex flex-col gap-3">
+      <h1 className="text-5xl font-bold text-center ">My Experience</h1>
+      <div className="h-screen w-full grid md:grid-cols-5 grid-cols-1 gap-7 py-6">
+        {/* Main featured card - Sageware */}
+        <div className="relative outline-1 outline-gruv-highlight-green/40 bg-gruv-bg-tinted row-span-2 col-span-3 rounded-xl p-8 hover:pl-10 transition-all duration-200 overflow-hidden group">
+          {/* Desk setup photo as full background */}
+          <div className="absolute inset-0">
+            <Image
+              src="/images/desk.jpg"
+              alt=""
+              fill
+              className="object-cover opacity-35"
+              aria-hidden="true"
+            />
+            {/* Dark gradient overlay - fades from top to bottom for text at bottom */}
+            <div className="absolute inset-0 bg-linear-to-b from-transparent via-gruv-bg-tinted/60 to-gruv-bg-tinted" />
+          </div>
+          <FloatingCircles />
+          <CornerBrackets className="group-hover:border-gruv-highlight-green/40 transition-colors duration-300" />
+          <div className="relative z-10 flex flex-col gap-2 h-full justify-end">
+            <h1 className="text-3xl font-bold">
+              <span className="text-gruv-highlight-green">
+                Software Engineer
+              </span>{" "}
+              at Sageware Solutions
+            </h1>
+            <h2 className="text-2xl">
+              Bridging yesterday's limitations with tomorrow's possibilities
+            </h2>
+          </div>
         </div>
-        <FloatingCircles />
-        <CornerBrackets className="group-hover:border-gruv-highlight-green/40 transition-colors duration-300" />
-        <div className="relative z-10 flex flex-col gap-2 h-full justify-end">
-          <h1 className="text-3xl font-bold">
-            <span className="text-gruv-highlight-green">Software Engineer</span>{" "}
-            at Sageware Solutions
-          </h1>
-          <h2 className="text-2xl">
-            Bridging yesterday's limitations with tomorrow's possibilities
-          </h2>
-        </div>
-      </div>
 
-      {/* Busolv AI card */}
-      <div className="relative outline-1 outline-gruv-highlight-green/40 bg-gruv-bg-tinted row-span-1 col-span-2 rounded-xl p-8 hover:pl-10 transition-all duration-200 overflow-hidden">
-        <DotGrid />
-        <CornerShape position="top-right" />
-        {/* Busolv logo as background */}
-        <div className="absolute right-4 bottom-2 w-28 h-28 opacity-30">
-          <Image
-            src="/images/busolv.webp"
-            alt=""
-            fill
-            className="object-contain"
-            aria-hidden="true"
-          />
+        {/* Busolv AI card */}
+        <div className="relative outline-1 outline-gruv-highlight-green/40 bg-gruv-bg-tinted row-span-1 col-span-2 rounded-xl p-8 hover:pl-10 transition-all duration-200 overflow-hidden">
+          <DotGrid />
+          <CornerShape position="top-right" />
+          {/* Busolv logo as background */}
+          <div className="absolute right-4 bottom-2 w-28 h-28 opacity-30">
+            <Image
+              src="/images/busolv.webp"
+              alt=""
+              fill
+              className="object-contain"
+              aria-hidden="true"
+            />
+          </div>
+          <div className="relative z-10 flex flex-col gap-2 h-full justify-start">
+            <h1 className="text-2xl font-bold text-gruv-highlight-green">
+              Busolv AI Calorie Counter
+            </h1>
+            <h2 className="text-xl">AI Engineer</h2>
+          </div>
         </div>
-        <div className="relative z-10 flex flex-col gap-2 h-full justify-start">
-          <h1 className="text-2xl font-bold text-gruv-highlight-green">
-            Busolv AI Calorie Counter
-          </h1>
-          <h2 className="text-xl">AI Engineer</h2>
-        </div>
-      </div>
 
-      {/* Expertise card */}
-      <div className="relative outline-1 outline-gruv-highlight-green/40 bg-gruv-bg-tinted row-span-1 col-span-2 rounded-xl p-8 hover:pl-10 transition-all duration-200 overflow-hidden">
-        <ScanLines />
-        <CodeBracket side="right" />
-        <div className="absolute top-4 left-4 w-3 h-3 bg-gruv-highlight-green/20 rounded-full" />
-        <div className="absolute top-4 left-10 w-3 h-3 bg-gruv-highlight-yellow/20 rounded-full" />
-        <div className="absolute top-4 left-16 w-3 h-3 bg-gruv-highlight-red-orange/20 rounded-full" />
-        <div className="relative z-10 flex flex-col gap-1 h-full justify-center">
-          <h1 className="text-lg font-medium">My Expertise</h1>
-          <h2 className="text-2xl font-bold text-gruv-highlight-green font-stretch-extra-condensed">
-            Laravel, Filament, Fast API, Pydantic, Next JS
-          </h2>
+        {/* Expertise card */}
+        <div className="relative outline-1 outline-gruv-highlight-green/40 bg-gruv-bg-tinted row-span-1 col-span-2 rounded-xl p-8 hover:pl-10 transition-all duration-200 overflow-hidden">
+          <ScanLines />
+          <CodeBracket side="right" />
+          <div className="absolute top-4 left-4 w-3 h-3 bg-gruv-highlight-green/20 rounded-full" />
+          <div className="absolute top-4 left-10 w-3 h-3 bg-gruv-highlight-yellow/20 rounded-full" />
+          <div className="absolute top-4 left-16 w-3 h-3 bg-gruv-highlight-red-orange/20 rounded-full" />
+          <div className="relative z-10 flex flex-col gap-1 h-full justify-center">
+            <h1 className="text-lg font-medium">My Expertise</h1>
+            <h2 className="text-2xl font-bold text-gruv-highlight-green font-stretch-extra-condensed">
+              Laravel, Filament, Fast API, Pydantic, Next JS
+            </h2>
+          </div>
         </div>
-      </div>
 
-      {/* Specialization card */}
-      <div className="relative outline-1 outline-gruv-highlight-green/40 bg-gruv-bg-tinted row-span-1 col-span-2 rounded-xl p-8 hover:pl-10 transition-all duration-200 overflow-hidden">
-        <GlowingOrb position="top-0 left-0" color="yellow" />
-        <div className="absolute bottom-0 right-0 w-24 h-24 border-t border-l border-gruv-highlight-green/10 rounded-tl-3xl" />
-        <div className="absolute bottom-6 right-6 w-12 h-12 border-t border-l border-gruv-highlight-yellow/10 rounded-tl-xl" />
-        <div className="relative z-10 flex flex-col gap-1 h-full justify-start">
-          <h1 className="text-lg font-medium">I specialize in</h1>
-          <h2 className="text-2xl font-bold text-gruv-highlight-green font-stretch-extra-condensed">
-            Backend & AI Engineering
-          </h2>
+        {/* Specialization card */}
+        <div className="relative outline-1 outline-gruv-highlight-green/40 bg-gruv-bg-tinted row-span-1 col-span-2 rounded-xl p-8 hover:pl-10 transition-all duration-200 overflow-hidden">
+          <GlowingOrb position="top-0 left-0" color="yellow" />
+          <div className="absolute bottom-0 right-0 w-24 h-24 border-t border-l border-gruv-highlight-green/10 rounded-tl-3xl" />
+          <div className="absolute bottom-6 right-6 w-12 h-12 border-t border-l border-gruv-highlight-yellow/10 rounded-tl-xl" />
+          <div className="relative z-10 flex flex-col gap-1 h-full justify-start">
+            <h1 className="text-lg font-medium">I specialize in</h1>
+            <h2 className="text-2xl font-bold text-gruv-highlight-green font-stretch-extra-condensed">
+              Backend & AI Engineering
+            </h2>
+          </div>
         </div>
-      </div>
 
-      {/* Previous experience card - Syntactics */}
-      <div className="relative outline-1 outline-gruv-highlight-green/40 bg-gruv-bg-tinted row-span-2 col-span-3 rounded-xl p-8 hover:pl-10 transition-all duration-200 overflow-hidden group">
-        <DotGrid />
-        <CornerShape position="bottom-left" />
-        {/* Syntactics brand logo as background */}
-        <div className="absolute right-6 bottom-4 w-56 h-56 opacity-25">
-          <Image
-            src="/images/syntactics-brand.svg"
-            alt=""
-            fill
-            className="object-contain"
-            aria-hidden="true"
-          />
+        {/* Previous experience card - Syntactics */}
+        <div className="relative outline-1 outline-gruv-highlight-green/40 bg-gruv-bg-tinted row-span-2 col-span-3 rounded-xl p-8 hover:pl-10 transition-all duration-200 overflow-hidden group">
+          <DotGrid />
+          <CornerShape position="bottom-left" />
+          {/* Syntactics brand logo as background */}
+          <div className="absolute right-6 bottom-4 w-56 h-56 opacity-25">
+            <Image
+              src="/images/syntactics-brand.svg"
+              alt=""
+              fill
+              className="object-contain"
+              aria-hidden="true"
+            />
+          </div>
+          <CornerBrackets className="group-hover:border-gruv-highlight-green/40 transition-colors duration-300" />
+          <div className="relative z-10 flex flex-col gap-1 h-full justify-start">
+            <h1 className="text-lg font-medium">My Previous Experience</h1>
+            <h2 className="text-2xl font-bold font-stretch-extra-condensed">
+              Web Developer Intern at{" "}
+              <span className="text-gruv-highlight-green">Syntactics Inc.</span>
+            </h2>
+          </div>
         </div>
-        <CornerBrackets className="group-hover:border-gruv-highlight-green/40 transition-colors duration-300" />
-        <div className="relative z-10 flex flex-col gap-1 h-full justify-start">
-          <h1 className="text-lg font-medium">My Previous Experience</h1>
-          <h2 className="text-2xl font-bold font-stretch-extra-condensed">
-            Web Developer Intern at{" "}
-            <span className="text-gruv-highlight-green">Syntactics Inc.</span>
-          </h2>
-        </div>
-      </div>
 
-      {/* Public Speaker card */}
-      <div className="relative outline-1 outline-gruv-highlight-green/40 bg-gruv-bg-tinted row-span-1 col-span-2 rounded-xl p-8 hover:pl-10 transition-all duration-200 overflow-hidden">
-        {/* Speech photo as full background */}
-        <div className="absolute inset-0">
-          <Image
-            src="/images/speech.jpg"
-            alt=""
-            fill
-            className="object-cover opacity-40"
-            aria-hidden="true"
-          />
-          {/* Dark gradient overlay for text readability */}
-          <div className="absolute inset-0 bg-linear-to-r from-gruv-bg-tinted via-gruv-bg-tinted/80 to-transparent" />
-        </div>
-        <div className="relative z-10 flex flex-col gap-1 h-full justify-start">
-          <h1 className="text-2xl font-bold font-stretch-extra-condensed">
-            Public Speaker
-          </h1>
-          <h2 className="text-lg font-medium">
-            I like to <span className="text-gruv-highlight-green">yap</span>.
-          </h2>
+        {/* Public Speaker card */}
+        <div className="relative outline-1 outline-gruv-highlight-green/40 bg-gruv-bg-tinted row-span-1 col-span-2 rounded-xl p-8 hover:pl-10 transition-all duration-200 overflow-hidden">
+          {/* Speech photo as full background */}
+          <div className="absolute inset-0">
+            <Image
+              src="/images/speech.jpg"
+              alt=""
+              fill
+              className="object-cover opacity-40"
+              aria-hidden="true"
+            />
+            {/* Dark gradient overlay for text readability */}
+            <div className="absolute inset-0 bg-linear-to-r from-gruv-bg-tinted via-gruv-bg-tinted/80 to-transparent" />
+          </div>
+          <div className="relative z-10 flex flex-col gap-1 h-full justify-start">
+            <h1 className="text-2xl font-bold font-stretch-extra-condensed">
+              Public Speaker
+            </h1>
+            <h2 className="text-lg font-medium">
+              I like to <span className="text-gruv-highlight-green">yap</span>.
+            </h2>
+          </div>
         </div>
       </div>
     </div>

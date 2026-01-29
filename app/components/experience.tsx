@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 // Decorative corner brackets (code-like aesthetic)
 const CornerBrackets = ({ className = "" }: { className?: string }) => (
@@ -194,12 +195,15 @@ const ExperienceSection = () => {
       <div className="relative outline-1 outline-gruv-highlight-green/40 bg-gruv-bg-tinted row-span-2 col-span-3 rounded-xl p-8 hover:pl-10 transition-all duration-200 overflow-hidden group">
         <DotGrid />
         <CornerShape position="bottom-left" />
-        <div className="absolute top-1/2 right-8 -translate-y-1/2 flex flex-col gap-2 opacity-[0.06]">
-          <div className="w-16 h-1 bg-current rounded" />
-          <div className="w-12 h-1 bg-current rounded" />
-          <div className="w-20 h-1 bg-current rounded" />
-          <div className="w-8 h-1 bg-current rounded" />
-          <div className="w-14 h-1 bg-current rounded" />
+        {/* Syntactics brand logo as background */}
+        <div className="absolute right-6 bottom-4 w-56 h-56 opacity-25">
+          <Image
+            src="/images/syntactics-brand.svg"
+            alt=""
+            fill
+            className="object-contain"
+            aria-hidden="true"
+          />
         </div>
         <CornerBrackets className="group-hover:border-gruv-highlight-green/40 transition-colors duration-300" />
         <div className="relative z-10 flex flex-col gap-1 h-full justify-start">

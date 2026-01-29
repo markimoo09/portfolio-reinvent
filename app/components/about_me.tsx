@@ -21,7 +21,7 @@ const AboutMe = () => {
 
               <AnimatedIntro />
 
-              <div className="flex flex-row gap-3 mt-8">
+              <div className="flex flex-row gap-3 mt-14">
                 <SocialButtons />
               </div>
             </div>

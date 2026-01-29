@@ -135,8 +135,18 @@ const ExperienceSection = () => {
     <div className="h-screen w-full grid md:grid-cols-5 grid-cols-1 gap-7 py-6">
       {/* Main featured card - Sageware */}
       <div className="relative outline-1 outline-gruv-highlight-green/40 bg-gruv-bg-tinted row-span-2 col-span-3 rounded-xl p-8 hover:pl-10 transition-all duration-200 overflow-hidden group">
-        <DiagonalLines />
-        <GlowingOrb position="bottom-0 right-0" />
+        {/* Desk setup photo as full background */}
+        <div className="absolute inset-0">
+          <Image
+            src="/images/desk.jpg"
+            alt=""
+            fill
+            className="object-cover opacity-35"
+            aria-hidden="true"
+          />
+          {/* Dark gradient overlay - fades from top to bottom for text at bottom */}
+          <div className="absolute inset-0 bg-linear-to-b from-transparent via-gruv-bg-tinted/60 to-gruv-bg-tinted" />
+        </div>
         <FloatingCircles />
         <CornerBrackets className="group-hover:border-gruv-highlight-green/40 transition-colors duration-300" />
         <div className="relative z-10 flex flex-col gap-2 h-full justify-end">

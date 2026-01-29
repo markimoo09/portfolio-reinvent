@@ -7,6 +7,7 @@ const AnimatedIntro = () => {
   const phrases = [
     "a Software Engineer",
     "a Backend Engineer",
+    "a Lead Engineer",
     "an AI Engineer",
     "a Software Engineer who specializes in Backend and AI Engineering",
   ];

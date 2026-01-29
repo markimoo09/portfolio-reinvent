@@ -67,3 +67,25 @@ body {
   animation: typing-cursor-blink 1s steps(1) infinite;
   vertical-align: -0.16em;
 }
+
+.hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes tech-marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.tech-marquee {
+  will-change: transform;
+}

@@ -154,7 +154,16 @@ const ExperienceSection = () => {
       <div className="relative outline-1 outline-gruv-highlight-green/40 bg-gruv-bg-tinted row-span-1 col-span-2 rounded-xl p-8 hover:pl-10 transition-all duration-200 overflow-hidden">
         <DotGrid />
         <CornerShape position="top-right" />
-        <div className="absolute bottom-4 right-4 w-12 h-12 border border-gruv-highlight-green/10 rounded-lg rotate-12" />
+        {/* Busolv logo as background */}
+        <div className="absolute right-4 bottom-2 w-28 h-28 opacity-30">
+          <Image
+            src="/images/busolv.webp"
+            alt=""
+            fill
+            className="object-contain"
+            aria-hidden="true"
+          />
+        </div>
         <div className="relative z-10 flex flex-col gap-2 h-full justify-start">
           <h1 className="text-2xl font-bold text-gruv-highlight-green">
             Busolv AI Calorie Counter
@@ -217,10 +226,18 @@ const ExperienceSection = () => {
 
       {/* Public Speaker card */}
       <div className="relative outline-1 outline-gruv-highlight-green/40 bg-gruv-bg-tinted row-span-1 col-span-2 rounded-xl p-8 hover:pl-10 transition-all duration-200 overflow-hidden">
-        <DiagonalLines />
-        <div className="absolute -bottom-4 -right-4 w-20 h-20 rounded-full border-2 border-gruv-highlight-green/10" />
-        <div className="absolute -bottom-8 -right-8 w-32 h-32 rounded-full border border-gruv-highlight-green/5" />
-        <CodeBracket side="left" />
+        {/* Speech photo as full background */}
+        <div className="absolute inset-0">
+          <Image
+            src="/images/speech.jpg"
+            alt=""
+            fill
+            className="object-cover opacity-40"
+            aria-hidden="true"
+          />
+          {/* Dark gradient overlay for text readability */}
+          <div className="absolute inset-0 bg-linear-to-r from-gruv-bg-tinted via-gruv-bg-tinted/80 to-transparent" />
+        </div>
         <div className="relative z-10 flex flex-col gap-1 h-full justify-start">
           <h1 className="text-2xl font-bold font-stretch-extra-condensed">
             Public Speaker

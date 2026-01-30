@@ -132,8 +132,8 @@ const CodeBracket = ({ side }: { side: "left" | "right" }) => {
 
 const ExperienceSection = () => {
   return (
-    <div className="flex flex-col gap-10 py-6">
-      <h1 className="text-5xl font-bold text-center ">My Experience</h1>
+    <div className="flex flex-col gap-10 py-6 mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <h1 className="text-4xl font-bold text-center ">My Experience</h1>
       <div className="h-screen w-full grid md:grid-cols-5 grid-cols-1 gap-7">
         {/* Main featured card - Sageware */}
         <div className="relative outline-1 outline-gruv-highlight-green/40 bg-gruv-bg-tinted row-span-2 col-span-3 rounded-xl p-8 hover:pl-10 transition-all duration-200 overflow-hidden group">

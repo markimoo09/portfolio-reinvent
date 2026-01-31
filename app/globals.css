@@ -102,7 +102,7 @@ body {
 }
 .animate-testimonial-marquee {
   animation-name: testimonial-marquee;
-  animation-duration: 35s;
+  animation-duration: 50s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }

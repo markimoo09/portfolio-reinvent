@@ -89,3 +89,21 @@ body {
 .tech-marquee {
   will-change: transform;
 }
+
+/* Testimonial animations part */
+
+@keyframes testimonial-marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.animate-testimonial-marquee {
+  animation: testimonial-marquee 10s linear infinite;
+}
+
+.animate-testimonial-marquee-paused {
+  animation-play-state: paused;
+}

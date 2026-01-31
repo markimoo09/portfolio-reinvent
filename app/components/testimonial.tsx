@@ -57,29 +57,32 @@ const testimonials: Testimonial[] = [
 ];
 
 const TestimonialSection = () => {
+  const looped = [...testimonials, ...testimonials];
   return (
     <div className="flex flex-col gap-4 py-14">
       <div className="text-bold text-center text-4xl font-bold text-gruv-highlight-green">
         <h1>You're not the first!</h1>
       </div>
 
-      <div className="items-start flex gap-4 w-full overflow-x-auto scroll-smooth snap-x snap-mandatory px-4 animated-scroll">
-        {testimonials.map((testimony) => {
-          return (
-            <div
-              key={testimony.key}
-              className="flex-none w-96 md:w-96 snap-start flex flex-col p-6 min-h-40 justify-between gap-12 bg-gruv-bg-tinted rounded-xl"
-            >
-              <p className="text-md font-stretch-extra-condensed">
-                {testimony.testimony}
-              </p>
+      <div className="w-full overflow-hidden px-4">
+        <div className="animate-testimonial-marquee hover:animation-testimonial-marquee-paused flex w-max gap-4">
+          {looped.map((testimony, i) => {
+            return (
+              <div
+                key={`${testimony.key}-${i}`}
+                className="flex-none w-96 md:w-96 snap-start flex flex-col p-6 min-h-40 justify-between gap-12 bg-gruv-bg-tinted rounded-xl"
+              >
+                <p className="text-md font-stretch-extra-condensed">
+                  {testimony.testimony}
+                </p>
 
-              <h3 className="text-lg font-bold text-gruv-highlight-yellow text-right">
-                {testimony.author}
-              </h3>
-            </div>
-          );
-        })}
+                <h3 className="text-lg font-bold text-gruv-highlight-yellow text-right">
+                  {testimony.author}
+                </h3>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

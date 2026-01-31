@@ -1,27 +1,25 @@
-{
-  "testimonials": [
-    {
-      "testimony": "Hardworking, You'll be sure to get quality outputs from him.",
-      "author": "Eli Yana",
-      "position": "Freelance Digital Artist"
-    },
+[
+  {
+    "testimony": "Hardworking, You'll be sure to get quality outputs from him.",
+    "author": "Eli Yana",
+    "position": "Freelance Digital Artist"
+  },
 
-    {
-      "testimony": "Mark Christopher demonstrates a well-rounded level of professional excellence through strong technical proficiency and adaptability. He consistently delivers high-quality results, even in challenging or high-pressure environments.",
-      "author": "Raj Byron A.",
-      "position": "IT Support"
-    },
+  {
+    "testimony": "Mark Christopher demonstrates a well-rounded level of professional excellence through strong technical proficiency and adaptability. He consistently delivers high-quality results, even in challenging or high-pressure environments.",
+    "author": "Raj Byron A.",
+    "position": "IT Support"
+  },
 
-    {
-      "testimony": "Great team member and can effectively communicate and get along with other members to make sure goals are met.",
-      "author": "Nicky Pojas",
-      "position": "Project Manager"
-    },
+  {
+    "testimony": "Great team member and can effectively communicate and get along with other members to make sure goals are met.",
+    "author": "Nicky Pojas",
+    "position": "Project Manager"
+  },
 
-    {
-      "testimony": "Calm and very adaptive under pressure. He solves a lot of difficult problems reliably because of his proactive mindset, and experience. Pagdating sa memes proactive mindset and experience din. Certified professional on both fronts.",
-      "author": "Shan Torrejos",
-      "position": "Web Developer"
-    }
-  ]
-}
+  {
+    "testimony": "Calm and very adaptive under pressure. He solves a lot of difficult problems reliably because of his proactive mindset, and experience. Pagdating sa memes proactive mindset and experience din. Certified professional on both fronts.",
+    "author": "Shan Torrejos",
+    "position": "Web Developer"
+  }
+]

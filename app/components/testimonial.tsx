@@ -2,74 +2,10 @@
 
 import React from "react";
 import TestimonialCard from "./testimonial_card";
-
-type Testimonial = {
-  testimony: string;
-  author: string;
-  position: string;
-  key: string;
-};
-
-const testimonials: Testimonial[] = [
-  {
-    testimony: "Hardworking, You'll be sure to get quality outputs from him.",
-    author: "John Doe",
-    position: "Software Engineer",
-    key: crypto.randomUUID(),
-  },
-  {
-    testimony:
-      "Mark Christopher demonstrates a well-rounded level of professional excellence through strong technical proficiency and adaptability. He consistently delivers high-quality results, even in challenging or high-pressure environments.",
-    author: "John Doe",
-    position: "Software Engineer",
-    key: crypto.randomUUID(),
-  },
-  {
-    testimony:
-      "Great team member and can effectively communicate and get along with other members to make sure goals are met.",
-    author: "John Doe",
-    position: "Software Engineer",
-    key: crypto.randomUUID(),
-  },
-  {
-    testimony:
-      "Great team member and can effectively communicate and get along with other members to make sure goals are met.",
-    author: "John Doe",
-    position: "Software Engineer",
-    key: crypto.randomUUID(),
-  },
-  {
-    testimony:
-      "Great team member and can effectively communicate and get along with other members to make sure goals are met.",
-    author: "John Doe",
-    position: "Software Engineer",
-    key: crypto.randomUUID(),
-  },
-  {
-    testimony:
-      "Great team member and can effectively communicate and get along with other members to make sure goals are met.",
-    author: "John Doe",
-    position: "Software Engineer",
-    key: crypto.randomUUID(),
-  },
-  {
-    testimony:
-      "Great team member and can effectively communicate and get along with other members to make sure goals are met.",
-    author: "John Doe",
-    position: "Software Engineer",
-    key: crypto.randomUUID(),
-  },
-  {
-    testimony:
-      "Great team member and can effectively communicate and get along with other members to make sure goals are met.",
-    author: "John Doe",
-    position: "Software Engineer",
-    key: crypto.randomUUID(),
-  },
-];
+import testimonials from "../data/testimonials.json";
 
 const TestimonialSection = () => {
-  const looped = [...testimonials, ...testimonials];
+  const looped = [...testimonials, ...testimonials, ...testimonials];
   return (
     <div className="flex flex-col gap-4 py-14">
       <div className="text-bold text-center text-4xl font-bold text-gruv-highlight-green">
@@ -92,7 +28,7 @@ const TestimonialSection = () => {
             return (
               <TestimonialCard
                 testimony={testimony}
-                key={`${testimony.key}-${i}`}
+                key={`${testimony.author}-${i}`}
               />
             );
           })}

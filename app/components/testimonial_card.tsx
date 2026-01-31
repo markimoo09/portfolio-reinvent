@@ -4,7 +4,6 @@ type Testimonial = {
   testimony: string;
   author: string;
   position: string;
-  key: string;
 };
 const TestimonialCard = ({ testimony }: { testimony: Testimonial }) => {
   return (

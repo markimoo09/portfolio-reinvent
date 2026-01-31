@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 
 type Testimonial = {
@@ -65,12 +67,22 @@ const TestimonialSection = () => {
       </div>
 
       <div className="w-full overflow-hidden px-4">
-        <div className="animate-testimonial-marquee hover:animation-testimonial-marquee-paused flex w-max gap-4">
+        <div
+          className="animate-testimonial-marquee flex w-max gap-4"
+          onMouseEnter={(e) =>
+            e.currentTarget.classList.add("animate-testimonial-marquee-paused")
+          }
+          onMouseLeave={(e) =>
+            e.currentTarget.classList.remove(
+              "animate-testimonial-marquee-paused",
+            )
+          }
+        >
           {looped.map((testimony, i) => {
             return (
               <div
                 key={`${testimony.key}-${i}`}
-                className="flex-none w-96 md:w-96 snap-start flex flex-col p-6 min-h-40 justify-between gap-12 bg-gruv-bg-tinted rounded-xl"
+                className="transition-color duration-200 border border-transparent hover:border-gruv-highlight-yellow flex-none w-96 md:w-96 snap-start flex flex-col p-6 min-h-40 justify-between gap-12 bg-gruv-bg-tinted rounded-xl"
               >
                 <p className="text-md font-stretch-extra-condensed">
                   {testimony.testimony}

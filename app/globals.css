@@ -101,9 +101,12 @@ body {
   }
 }
 .animate-testimonial-marquee {
-  animation: testimonial-marquee 10s linear infinite;
+  animation-name: testimonial-marquee;
+  animation-duration: 35s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 .animate-testimonial-marquee-paused {
-  animation-play-state: paused;
+  animation-play-state: paused !important;
 }
